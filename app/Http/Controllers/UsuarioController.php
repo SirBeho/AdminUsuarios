@@ -13,7 +13,6 @@ class UsuarioController extends Controller
 
     public function show($id){
    
-        $Productos = Usuario::find($id);
-        return $Productos;
+        return Usuario::find($id);
     }
 }
