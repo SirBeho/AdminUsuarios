@@ -15,4 +15,17 @@ class UsuarioController extends Controller
    
         return Usuario::find($id);
     }
+
+    public function create(Request $body){
+
+        $usuario = new Usuario();
+        $usuario->name = $body->name;
+        $usuario->lastname = $body->lastname;
+        $usuario->email = $body->email;
+        $usuario->password = $body->password;
+        $usuario->save();
+        return view('success');
+    }
+
+    
 }
