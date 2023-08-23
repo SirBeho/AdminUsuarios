@@ -23,4 +23,7 @@ class RolesController extends Controller
         $usuario->save();
         return "registro ".$body->name." añadido satisfacoriamente";
     }
+
+
+   
 }

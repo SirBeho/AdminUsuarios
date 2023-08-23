@@ -19,5 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/create', [UsuarioController::class, 'create']);
+Route::post('/create', [UsuarioController::class, 'create'])->name('usuario.create');
 
