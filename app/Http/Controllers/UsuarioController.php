@@ -44,8 +44,7 @@ class UsuarioController extends Controller
 
     public function lista()
     {
-
-        $usuario =  Usuario::all();
-        return view('lista', compact(array('usuario')));
+        $usuarios =  Usuario::all();
+        return view('listado', compact(array('usuarios')));
     }
 }
